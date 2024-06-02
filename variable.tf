@@ -8,20 +8,14 @@ variable "pubsub_config" {
 }
 
 # Example value
-pubsub_config = {
+pubsub_config = [
   "example-config-1" = {
-    pubsub_topic_name          = "example-topic-1"
+    pubsub_topic_name          = "app_notifications"
     pubsub_topic_labels        = { "env" = "dev" }
     subscription_labels        = { "team" = "analytics" }
     pubsub_subscription_name   = "example-subscription-1"
-  },
-  "example-config-2" = {
-    pubsub_topic_name          = "example-topic-2"
-    pubsub_topic_labels        = { "env" = "prod" }
-    subscription_labels        = { "team" = "marketing" }
-    pubsub_subscription_name   = "example-subscription-2"
   }
-}
+]
 
 variable "source_project_name"{
 type=string
