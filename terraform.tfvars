@@ -13,3 +13,4 @@ project_sink_config = [
     pubsub_topic_name = ""
     filter            = "severity>=\"INFO\""
   }]
+pubsub_subscription_sa=""
