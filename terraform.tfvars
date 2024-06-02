@@ -8,9 +8,9 @@ pubsub_config = {
 }
 project_sink_config = [
   {
-    project_id        = ""
-    project_name      = ""
-    pubsub_topic_name = ""
+    project_id        = "uclodia-424702"
+    project_name      = "uclodia"
+    pubsub_topic_name = "app_notifications"
     filter            = "severity>=\"INFO\""
   }]
 pubsub_subscription_sa=""
