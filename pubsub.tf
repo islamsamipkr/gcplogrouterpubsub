@@ -17,7 +17,6 @@ module "app-pubsub" {
       retain_acked_messages      = false     // Default
       ack_deadline_seconds       = 10        // Default
       expiration_policy          = ""        // Subscription never expires
-      dead_letter_topic     = "projects/${var.project_id}/topics/${each.value.pubsub_subscription_name}_dl"
       max_delivery_attempts = 5      // Default
       minimum_backoff       = "10s"  // Default
       maximum_backoff       = "600s" // Default
@@ -29,9 +28,7 @@ module "app-pubsub" {
     }
   ]
 
-  depends_on = [
-    module.pubsub_dl
-  ]
+
 }
  
 
