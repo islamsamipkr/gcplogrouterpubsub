@@ -37,7 +37,7 @@ resource "google_logging_project_sink" "app_project_sink" {
   name        = "${each.value.project_name}-logsink-${index(var.project_sink_config, each.value) + 1}"
   description = "Project sink for ${each.value.project_name}"
   destination = "pubsub.googleapis.com/projects/${var.project_id}/topics/${each.value.pubsub_topic_name}"
-  unique_writer_identity = true
+  custom_writer_identity= "serviceAccount:logrouter-pubsub@uclodia-424702.iam.gserviceaccount.com"
   filter                 = each.value.filter
   project                = each.value.project_id
 
