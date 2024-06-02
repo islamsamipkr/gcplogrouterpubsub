@@ -8,7 +8,9 @@ variable "pubsub_config" {
 }
 
 # Example value
+variable "project_sink_config"{
 
+}
 
 variable "source_project_name"{
 type=string
