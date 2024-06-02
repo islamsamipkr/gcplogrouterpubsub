@@ -6,8 +6,10 @@ pubsub_config = {
     pubsub_subscription_name   = "example-subscription-1"
   }
 }
-project_sink_config=[
-{
-
-}
-]
+project_sink_config = [
+  {
+    project_id        = ""
+    project_name      = ""
+    pubsub_topic_name = ""
+    filter            = "severity>=\"INFO\""
+  }]
