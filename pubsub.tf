@@ -1,6 +1,6 @@
 module "app-pubsub" {
   source   = "terraform-google-modules/pubsub/google"
-  version  = "~> 5.0"
+  version  = "~> 6.0"
   for_each = { for x, n in var.pubsub_config : x => n }
   project_id = var.project_id
   grant_token_creator = false
