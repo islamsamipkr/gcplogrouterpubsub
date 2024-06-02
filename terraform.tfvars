@@ -4,5 +4,5 @@ pubsub_config = [
     pubsub_topic_labels        = { "env" = "dev" }
     subscription_labels        = { "team" = "analytics" }
     pubsub_subscription_name   = "example-subscription-1"
-  }
+  },
 ]
