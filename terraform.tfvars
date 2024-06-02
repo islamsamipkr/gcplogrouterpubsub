@@ -6,3 +6,8 @@ pubsub_config = {
     pubsub_subscription_name   = "example-subscription-1"
   }
 }
+project_sink_config=[
+{
+
+}
+]
