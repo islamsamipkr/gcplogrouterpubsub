@@ -22,3 +22,8 @@ pubsub_config = {
     pubsub_subscription_name   = "example-subscription-2"
   }
 }
+
+variable "source_project_name"{
+type=string
+default="dev-office-424702-d0"
+}
