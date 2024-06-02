@@ -40,7 +40,6 @@ resource "google_logging_project_sink" "app_project_sink" {
 
   filter                 = each.value.filter
   project                = each.value.project_id
-  unique_writer_identity = false
   custom_writer_identity="serviceAccount:logrouter-pubsub@uclodia-424702.iam.gserviceaccount.com"
 
 }
