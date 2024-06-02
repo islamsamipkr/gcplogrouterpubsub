@@ -13,3 +13,4 @@ variable "project_sink_config"{
 }
 variable "pubsub_subscription_sa"{}
 variable "project_id"{}
+variable "GOOGLE_CREDENTIALS"{}
