@@ -14,4 +14,4 @@ project_sink_config = [
     filter            = "severity>=\"INFO\""
   }]
 pubsub_subscription_sa="internalsa@dev-office-424702-d0.iam.gserviceaccount.com"
-project_id="dev-office-424702-d0"
+project_id="uclodia-424702"
