@@ -11,7 +11,7 @@ variable "pubsub_config" {
 variable "project_sink_config"{
 
 }
-
+variable "pubsub_subscription_sa"{}
 variable "source_project_name"{
 type=string
 default="dev-office-424702-d0"
